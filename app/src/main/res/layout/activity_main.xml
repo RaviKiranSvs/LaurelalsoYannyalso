@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityMain">
+
+    <Button
+        android:id="@+id/b_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/s_main1"
+        android:textColor="@color/colorText"
+        app:layout_constraintTop_toBottomOf="@id/b_main"
+        app:layout_constraintStart_toStartOf="@id/b_main"
+        app:layout_constraintEnd_toEndOf="@id/b_main"/>
+
+    <Button
+        android:id="@+id/b_laurel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintTop_toTopOf="@id/b_main"
+        app:layout_constraintBottom_toBottomOf="@id/b_main"
+        app:layout_constraintEnd_toStartOf="@id/b_main"/>
+
+    <LinearLayout
+        android:id="@+id/ll_l"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/b_laurel"
+        app:layout_constraintStart_toStartOf="@id/b_laurel"
+        app:layout_constraintEnd_toEndOf="@id/b_laurel">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/s_laurel01"
+        android:textColor="@color/colorText"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@id/ll_l"
+        app:layout_constraintTop_toTopOf="@id/ll_l"/>
+
+    <Button
+        android:id="@+id/b_yanny"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toTopOf="@id/b_main"
+        app:layout_constraintBottom_toBottomOf="@id/b_main"
+        app:layout_constraintStart_toEndOf="@id/b_main"/>
+
+    <LinearLayout
+        android:id="@+id/ll_y"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@id/b_yanny"
+        app:layout_constraintStart_toStartOf="@id/b_yanny"
+        app:layout_constraintEnd_toEndOf="@id/b_yanny">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/s_yanny01"
+        android:textColor="@color/colorText"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintEnd_toStartOf="@id/ll_y"
+        app:layout_constraintBottom_toBottomOf="@+id/ll_y"/>
+
+</android.support.constraint.ConstraintLayout>

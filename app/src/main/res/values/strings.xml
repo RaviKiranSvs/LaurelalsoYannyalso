@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Laurel also, Yanny also</string>
+
+    <string name="s_main1">Listen to the original sound</string>
+    <string name="s_main2">What so you hear?</string>
+    <string name="s_laurel01">same audio, but + pitch</string>
+    <string name="s_yanny01">same audio but - pitch</string>
+
+    <string-array name="s_laurel01">
+        <item>Now listen to the same audio, but "+10%" pitch</item>
+        <item>Now listen to the same audio, but "+20%" pitch</item>
+        <item>Now listen to the same audio, but "+30%" pitch</item>
+    </string-array>
+
+    <string-array name="s_yanny01">
+        <item>Now listen to the same audio, but "-10%" pitch</item>
+        <item>Now listen to the same audio, but "-20%" pitch</item>
+        <item>Now listen to the same audio, but "-30%" pitch</item>
+    </string-array>
+
+    <string-array name="s_laurel02">
+        <item>Audio with +10% pitch</item>
+        <item>Audio with +20% pitch</item>
+        <item>Audio with +30% pitch</item>
+    </string-array>
+
+    <string-array name="s_yanny02">
+        <item>Audio with -10% pitch</item>
+        <item>Audio with -20% pitch</item>
+        <item>Audio with -30% pitch</item>
+    </string-array>
+
+</resources>
